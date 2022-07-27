@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UAS Penty</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+	  var nomor = 0;
+	  $("#btn2").click(function () {
+		var nam, pes;
+		nam = $("#nama").val();
+		pes = $("#pesan").val();
+		nomor++;
+		$("#listdata").append(" <tr><td>" + nomor + "</td><td>" + nam + "</td><td>" + pes + "</td></tr>");
+	  });
+
+	 
+	});
+  </script>
+</style>
+</head>
+    <body>
+        <div id="wrap">
+            <div id="header-penty">
+                <h1>Toko Kue Penty<br />
+                  </h1>
+               
+            </div>
+            <div class="row-penty ">
+                <div class="col-3 col-m-5">
+                    <div id="silebar-penty">
+                        <div id="judul_silebar_penty">
+                            SILEBAR
+                        </div>
+                        <div id="isi_silebar_penty">
+                            <ul>
+                                <li><a href='index.html' >HOME </a> </li>
+                                <li><a href='about.html'>About</a> </li>
+                             <li><a href='kontak.html' >Kontak </a></li>
+                             <li><a href='pesan.html'>Form Pemesanan</a></li>
+                             <li><a href='ulangtahun.html'>Kue Ulang Tahun</a></li>
+                             <li><a href='bolu.html'>Kue Bolu</a></li>
+                             <li><a href='brownies.html'>Kue Brownies</a></li>
+			
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-m-7">
+                    <div id="konten">
+                        <div class="col-12 col-m-12">
+							<h1><center>Form Pemesanan</center></h1>
+
+							<table id="form-penty" align="center" width="100%" border="1">
+								Nama<br>
+								<input type="text" id="nama" /><br />
+								Masukkan nama kue yang dipesan<br>
+								<input type="text" id="pesan" /><br />
+								<button id="btn2" class="tombol tombol-lengkap">Simpan Pesanan</button>
+							</table>
+							<table align="center" id="listdata" align="center" width="auto" cellspacing="0px" cellpadding="5px" border="1px">
+								<tr align="center">
+								 <th align="center" width="140px">NO</th>
+								 <th align="center" width="140px">Nama</th>
+								 <th align="center"width="160px">Kue Yang dipesan</th>
+								 
+							   </tr>
+							 </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="row-penty ">
+                <div id="footer-penty">
+                    <div id="text">
+                        Dibuat oleh Penty - 432007006190385 - 2C
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
